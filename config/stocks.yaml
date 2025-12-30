@@ -1,0 +1,124 @@
+# Stock Watchlists and Portfolios
+
+watchlists:
+  # Technology Stocks
+  tech:
+    - AAPL    # Apple Inc.
+    - MSFT    # Microsoft Corporation
+    - GOOGL   # Alphabet Inc. (Google)
+    - AMZN    # Amazon.com Inc.
+    - META    # Meta Platforms Inc. (Facebook)
+    - NVDA    # NVIDIA Corporation
+    - TSLA    # Tesla Inc.
+    - NFLX    # Netflix Inc.
+
+  # Dow Jones Industrial Average (Top 10 by market cap)
+  dow30:
+    - AAPL    # Apple
+    - MSFT    # Microsoft
+    - UNH     # UnitedHealth Group
+    - JPM     # JPMorgan Chase
+    - V       # Visa
+    - JNJ     # Johnson & Johnson
+    - WMT     # Walmart
+    - PG      # Procter & Gamble
+    - MA      # Mastercard
+    - HD      # Home Depot
+
+  # S&P 500 Tech Leaders
+  sp500_tech:
+    - AAPL    # Apple
+    - MSFT    # Microsoft
+    - GOOGL   # Alphabet
+    - AMZN    # Amazon
+    - NVDA    # NVIDIA
+    - META    # Meta
+    - TSLA    # Tesla
+    - AVGO    # Broadcom
+    - ORCL    # Oracle
+    - CSCO    # Cisco
+
+  # Financial Sector
+  finance:
+    - JPM     # JPMorgan Chase
+    - BAC     # Bank of America
+    - WFC     # Wells Fargo
+    - C       # Citigroup
+    - GS      # Goldman Sachs
+    - MS      # Morgan Stanley
+    - BLK     # BlackRock
+    - AXP     # American Express
+
+  # Healthcare
+  healthcare:
+    - JNJ     # Johnson & Johnson
+    - UNH     # UnitedHealth
+    - PFE     # Pfizer
+    - ABBV    # AbbVie
+    - TMO     # Thermo Fisher
+    - MRK     # Merck
+    - LLY     # Eli Lilly
+    - ABT     # Abbott Labs
+
+  # Consumer
+  consumer:
+    - AMZN    # Amazon
+    - WMT     # Walmart
+    - HD      # Home Depot
+    - NKE     # Nike
+    - SBUX    # Starbucks
+    - MCD     # McDonald's
+    - TGT     # Target
+    - COST    # Costco
+
+  # Energy
+  energy:
+    - XOM     # Exxon Mobil
+    - CVX     # Chevron
+    - COP     # ConocoPhillips
+    - SLB     # Schlumberger
+    - EOG     # EOG Resources
+    - PSX     # Phillips 66
+
+  # Semiconductors
+  semiconductors:
+    - NVDA    # NVIDIA
+    - INTC    # Intel
+    - AMD     # Advanced Micro Devices
+    - TSM     # Taiwan Semiconductor
+    - QCOM    # Qualcomm
+    - AVGO    # Broadcom
+    - MU      # Micron Technology
+    - TXN     # Texas Instruments
+
+# Example Portfolio Configurations
+portfolios:
+  balanced:
+    AAPL: 0.15
+    MSFT: 0.15
+    GOOGL: 0.10
+    AMZN: 0.10
+    JPM: 0.10
+    JNJ: 0.10
+    WMT: 0.10
+    XOM: 0.10
+    GLD: 0.05   # Gold ETF
+    BND: 0.05   # Bond ETF
+
+  aggressive_tech:
+    AAPL: 0.20
+    MSFT: 0.20
+    NVDA: 0.15
+    GOOGL: 0.15
+    META: 0.10
+    TSLA: 0.10
+    AMD: 0.10
+
+  conservative:
+    JNJ: 0.20
+    PG: 0.15
+    KO: 0.15    # Coca-Cola
+    WMT: 0.15
+    VZ: 0.10    # Verizon
+    T: 0.10     # AT&T
+    BND: 0.15   # Bond ETF

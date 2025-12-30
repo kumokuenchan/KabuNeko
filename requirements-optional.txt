@@ -1,0 +1,26 @@
+# Optional Dependencies for Stock Analysis Toolkit
+#
+# These are OPTIONAL and not required for core functionality
+#
+# ⚠️ IMPORTANT: These packages may not support Python 3.14+
+# As of December 2024:
+# - TensorFlow supports Python 3.9-3.12
+# - pandas-ta requires numba (Python 3.10-3.13)
+# - XGBoost may have limited support
+#
+# If you have Python 3.14+, you have these options:
+# 1. Use Python 3.11 or 3.12 for full compatibility
+# 2. Wait for packages to add Python 3.14 support
+# 3. Skip these optional features (core toolkit still works!)
+
+# Advanced Technical Indicators
+pandas-ta>=0.3.14b  # Requires numba (Python 3.10-3.13)
+
+# Deep Learning (for LSTM models)
+tensorflow>=2.13.0  # Python 3.9-3.12
+keras>=2.13.0
+
+# Gradient Boosting (alternatives to Random Forest)
+xgboost>=2.0.0
+lightgbm>=4.0.0
+catboost>=1.2.0

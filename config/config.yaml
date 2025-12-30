@@ -1,0 +1,82 @@
+# Stock Analysis Toolkit Configuration
+
+# Data Settings
+data:
+  cache_dir: "data/cache"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  default_start_date: "2020-01-01"
+  default_interval: "1d"
+  cache_max_age_hours: 24
+
+# Model Settings
+models:
+  save_dir: "models/saved_models"
+  random_state: 42
+
+  # Random Forest
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 5
+
+  # XGBoost
+  xgboost:
+    n_estimators: 100
+    learning_rate: 0.1
+    max_depth: 5
+
+  # LSTM
+  lstm:
+    units_layer1: 50
+    units_layer2: 50
+    dropout: 0.2
+    epochs: 50
+    batch_size: 32
+    lookback: 60
+
+# Backtesting Settings
+backtesting:
+  initial_capital: 10000
+  commission: 0.002  # 0.2%
+  slippage: 0.001    # 0.1%
+
+# Visualization Settings
+visualization:
+  theme: "plotly_dark"
+  default_height: 600
+  default_width: 1200
+  color_scheme:
+    - "#2E86AB"
+    - "#A23B72"
+    - "#F18F01"
+    - "#C73E1D"
+    - "#6A994E"
+
+# Technical Indicators Default Parameters
+indicators:
+  sma:
+    short: 20
+    medium: 50
+    long: 200
+
+  ema:
+    fast: 12
+    slow: 26
+
+  rsi:
+    period: 14
+    overbought: 70
+    oversold: 30
+
+  macd:
+    fast: 12
+    slow: 26
+    signal: 9
+
+  bollinger_bands:
+    period: 20
+    std_dev: 2
+
+  atr:
+    period: 14
