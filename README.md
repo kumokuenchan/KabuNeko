@@ -16,6 +16,7 @@ A professional-grade stock analysis web application built with Streamlit, featur
 - **🔔 Price Alerts** - Set alerts for price targets and indicators
 - **💹 Performance Tracker** - Track paper trading performance with P&L analysis
 - **₿ Crypto Analysis** - Dedicated cryptocurrency analysis with 24/7 market data and volatility metrics
+- **📰 AI News Sentiment** - AI-powered analysis of news headlines with sentiment scoring and trend detection
 - **🌙 Dark Mode** - Toggle between light and dark themes
 
 ## 🚀 Quick Start
@@ -78,19 +79,21 @@ stock/
     │   └── strategies.py           # Trading strategies (SMA, RSI)
     │
     ├── analysis/
-    │   └── investment_recommendation.py  # AI recommendation engine
+    │   ├── investment_recommendation.py  # AI recommendation engine
+    │   └── sentiment_analyzer.py   # News sentiment analysis ⭐ NEW
     │
     ├── fundamental/
     │   └── ratios.py               # Financial ratios
     │
     ├── ui/
-    │   ├── themes.py               # Light/Dark CSS themes
-    │   └── charts.py               # Reusable chart functions ⭐ NEW
+    │   ├── themes.py               # Apple-inspired CSS themes ⭐ UPDATED
+    │   ├── charts.py               # Reusable chart functions
+    │   └── components.py           # UI component library ⭐ NEW
     │
     ├── alerts/
     │   └── checker.py              # Price alert monitoring
     │
-    └── pages/                      # 13 page modules ⭐ NEW
+    └── pages/                      # 14 page modules
         ├── __init__.py
         ├── home.py
         ├── stock_overview.py
@@ -104,7 +107,8 @@ stock/
         ├── stock_screener.py
         ├── stock_comparison.py
         ├── watchlist_manager.py
-        └── crypto_analysis.py
+        ├── crypto_analysis.py
+        └── news_sentiment.py          # AI news sentiment ⭐ NEW
 ```
 
 ## 🛠️ Technology Stack

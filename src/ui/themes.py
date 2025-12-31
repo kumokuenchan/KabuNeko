@@ -38,6 +38,13 @@ def get_theme_css(dark_mode: bool = False) -> str:
             .stDataFrame {
                 background-color: #2d3748;
             }
+            /* News article link hover effects */
+            .metric-card h4 a:hover {
+                color: #007AFF !important;
+            }
+            .metric-card a {
+                transition: all 0.2s ease;
+            }
         </style>
         """
     else:
@@ -58,6 +65,13 @@ def get_theme_css(dark_mode: bool = False) -> str:
             }
             .stAlert {
                 margin-top: 1rem;
+            }
+            /* News article link hover effects */
+            .metric-card h4 a:hover {
+                color: #007AFF !important;
+            }
+            .metric-card a {
+                transition: all 0.2s ease;
             }
         </style>
         """
