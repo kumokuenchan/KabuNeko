@@ -35,6 +35,7 @@ from src.pages import (
     render_stock_screener,
     render_stock_comparison,
     render_watchlist_manager,
+    render_crypto_analysis,
 )
 
 # Page configuration
@@ -83,7 +84,8 @@ def main() -> None:
                 "🔄 Stock Comparison",
                 "🔍 Stock Screener",
                 "🔔 Price Alerts",
-                "💹 Performance Tracker"
+                "💹 Performance Tracker",
+                "₿ Crypto Analysis"
             ],
             label_visibility="collapsed"
         )
@@ -139,6 +141,7 @@ def main() -> None:
         "🔍 Stock Screener": render_stock_screener,
         "🔔 Price Alerts": render_alerts,
         "💹 Performance Tracker": render_performance_tracker,
+        "₿ Crypto Analysis": render_crypto_analysis,
     }
 
     # Find and render the selected page

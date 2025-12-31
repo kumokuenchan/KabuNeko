@@ -17,6 +17,7 @@ from .performance_tracker import render as render_performance_tracker
 from .stock_screener import render as render_stock_screener
 from .stock_comparison import render as render_stock_comparison
 from .watchlist_manager import render as render_watchlist_manager
+from .crypto_analysis import render as render_crypto_analysis
 
 __all__ = [
     'render_home',
@@ -31,4 +32,5 @@ __all__ = [
     'render_stock_screener',
     'render_stock_comparison',
     'render_watchlist_manager',
+    'render_crypto_analysis',
 ]

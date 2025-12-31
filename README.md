@@ -15,6 +15,7 @@ A professional-grade stock analysis web application built with Streamlit, featur
 - **🔍 Stock Screener** - Find stocks matching technical criteria
 - **🔔 Price Alerts** - Set alerts for price targets and indicators
 - **💹 Performance Tracker** - Track paper trading performance with P&L analysis
+- **₿ Crypto Analysis** - Dedicated cryptocurrency analysis with 24/7 market data and volatility metrics
 - **🌙 Dark Mode** - Toggle between light and dark themes
 
 ## 🚀 Quick Start
@@ -89,7 +90,7 @@ stock/
     ├── alerts/
     │   └── checker.py              # Price alert monitoring
     │
-    └── pages/                      # 12 page modules ⭐ NEW
+    └── pages/                      # 13 page modules ⭐ NEW
         ├── __init__.py
         ├── home.py
         ├── stock_overview.py
@@ -102,7 +103,8 @@ stock/
         ├── performance_tracker.py
         ├── stock_screener.py
         ├── stock_comparison.py
-        └── watchlist_manager.py
+        ├── watchlist_manager.py
+        └── crypto_analysis.py
 ```
 
 ## 🛠️ Technology Stack
