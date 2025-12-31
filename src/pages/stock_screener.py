@@ -210,7 +210,7 @@ def render():
                     # Sort by technical score (descending)
                     df_results_sorted = df_results.sort_values('Tech Score', ascending=False)
 
-                    st.dataframe(df_results_sorted, use_container_width=True, hide_index=True)
+                    st.dataframe(df_results_sorted, width="stretch", hide_index=True)
 
                     # Summary statistics
                     col1, col2, col3 = st.columns(3)

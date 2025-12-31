@@ -8,13 +8,14 @@ to JSON files in the data/user_data directory.
 import streamlit as st
 import json
 from pathlib import Path
+from typing import Dict, Any
 
 # User data directory
 USER_DATA_DIR = Path("data/user_data")
 USER_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def load_json_data(filename: str, default: dict) -> dict:
+def load_json_data(filename: str, default: Dict[str, Any]) -> Dict[str, Any]:
     """Load JSON data from user_data directory"""
     file_path = USER_DATA_DIR / filename
     if file_path.exists():
@@ -27,7 +28,7 @@ def load_json_data(filename: str, default: dict) -> dict:
     return default
 
 
-def save_json_data(filename: str, data: dict) -> bool:
+def save_json_data(filename: str, data: Dict[str, Any]) -> bool:
     """Save JSON data to user_data directory"""
     file_path = USER_DATA_DIR / filename
     try:
@@ -39,7 +40,7 @@ def save_json_data(filename: str, data: dict) -> bool:
         return False
 
 
-def initialize_user_data():
+def initialize_user_data() -> None:
     """Initialize all user data in session state on app start"""
     if 'user_watchlists' not in st.session_state:
         st.session_state['user_watchlists'] = load_json_data(

@@ -127,7 +127,7 @@ def render():
             xaxis_rangeslider_visible=False
         )
 
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
 
         # Volume chart
         st.markdown("### Volume")
@@ -149,11 +149,11 @@ def render():
             height=300
         )
 
-        st.plotly_chart(fig_vol, use_container_width=True)
+        st.plotly_chart(fig_vol, width="stretch")
 
         # Data table
         with st.expander("📋 View Raw Data"):
-            st.dataframe(df.tail(100), use_container_width=True)
+            st.dataframe(df.tail(100), width="stretch")
 
     else:
         st.info("👆 Enter a stock ticker and click 'Load Stock Data' to get started!")

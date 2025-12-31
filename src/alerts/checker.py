@@ -12,7 +12,7 @@ from src.models.feature_engineering import FeatureEngineer
 from src.indicators.trend import TrendIndicators
 
 
-def check_price_alerts():
+def check_price_alerts() -> None:
     """Check active alerts and show triggered ones in sidebar"""
     alerts_list = st.session_state.get('user_alerts', {}).get('alerts', [])
     if not alerts_list:

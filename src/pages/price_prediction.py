@@ -101,7 +101,7 @@ def render():
                     height=400
                 )
 
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width="stretch")
 
                 # Future prediction
                 st.markdown(f"### {prediction_days}-Day Future Forecast")
@@ -146,7 +146,7 @@ def render():
                     height=400
                 )
 
-                st.plotly_chart(fig_future, use_container_width=True)
+                st.plotly_chart(fig_future, width="stretch")
 
                 # Show prediction values
                 st.markdown("#### Predicted Prices")
@@ -161,7 +161,7 @@ def render():
                     'Predicted Price': '${:.2f}',
                     'Change from Today': '${:.2f}',
                     '% Change': '{:.2f}%'
-                }), use_container_width=True)
+                }), width="stretch")
 
                 # Feature importance
                 with st.expander("📊 Feature Importance - What the AI Looks At"):

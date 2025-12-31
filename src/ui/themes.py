@@ -5,7 +5,7 @@ Provides CSS styling for light and dark modes.
 """
 
 
-def get_theme_css(dark_mode=False):
+def get_theme_css(dark_mode: bool = False) -> str:
     """Generate CSS based on current theme"""
     if dark_mode:
         return """

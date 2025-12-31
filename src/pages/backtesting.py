@@ -156,7 +156,7 @@ def render():
                         height=400
                     )
 
-                    st.plotly_chart(fig, use_container_width=True)
+                    st.plotly_chart(fig, width="stretch")
 
                     st.markdown("---")
 
@@ -182,7 +182,7 @@ def render():
                         ]
                     })
 
-                    st.dataframe(comparison_df, use_container_width=True)
+                    st.dataframe(comparison_df, width="stretch")
 
                 st.info("""
                 💡 **How to interpret**:

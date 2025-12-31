@@ -50,7 +50,7 @@ st.set_page_config(
 # MAIN APPLICATION
 # ============================================================================
 
-def main():
+def main() -> None:
     """Main application"""
 
     # Initialize user data (watchlists, alerts, performance tracker)

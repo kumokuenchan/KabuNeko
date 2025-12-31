@@ -95,7 +95,7 @@ def render():
                     'Current Price': '${:.2f}',
                     'Return (%)': '{:.2f}%',
                     'Change ($)': '${:.2f}'
-                }).background_gradient(subset=['Return (%)'], cmap='RdYlGn'), use_container_width=True)
+                }).background_gradient(subset=['Return (%)'], cmap='RdYlGn'), width="stretch")
 
                 # Portfolio composition
                 col1, col2 = st.columns(2)
@@ -112,7 +112,7 @@ def render():
                         template='plotly_white',
                         height=300
                     )
-                    st.plotly_chart(fig_bar, use_container_width=True)
+                    st.plotly_chart(fig_bar, width="stretch")
 
                 with col2:
                     st.markdown("### Portfolio Summary")
@@ -148,7 +148,7 @@ def render():
                     height=400
                 )
 
-                st.plotly_chart(fig_compare, use_container_width=True)
+                st.plotly_chart(fig_compare, width="stretch")
 
                 # Correlation matrix
                 st.markdown("### Correlation Matrix")
@@ -178,7 +178,7 @@ def render():
                     height=400
                 )
 
-                st.plotly_chart(fig_corr, use_container_width=True)
+                st.plotly_chart(fig_corr, width="stretch")
 
             except Exception as e:
                 st.error(f"❌ Error analyzing portfolio: {str(e)}")

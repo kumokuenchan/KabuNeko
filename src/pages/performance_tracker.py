@@ -194,7 +194,7 @@ def render():
             hovermode='x unified'
         )
 
-        st.plotly_chart(fig_pl, use_container_width=True)
+        st.plotly_chart(fig_pl, width="stretch")
 
         # Win/Loss Distribution
         st.markdown("### 📊 Win/Loss Distribution")
@@ -210,7 +210,7 @@ def render():
                 hole=0.4
             )])
             fig_pie.update_layout(height=300, template='plotly_white')
-            st.plotly_chart(fig_pie, use_container_width=True)
+            st.plotly_chart(fig_pie, width="stretch")
 
         with col2:
             # P&L by ticker
@@ -232,7 +232,7 @@ def render():
                 height=300,
                 template='plotly_white'
             )
-            st.plotly_chart(fig_bar, use_container_width=True)
+            st.plotly_chart(fig_bar, width="stretch")
 
     else:
         st.info("💡 Close some trades (log SELL orders) to see performance statistics")
@@ -265,7 +265,7 @@ def render():
         trade_display.append(display_row)
 
     df_trades = pd.DataFrame(trade_display)
-    st.dataframe(df_trades, use_container_width=True, hide_index=True)
+    st.dataframe(df_trades, width="stretch", hide_index=True)
 
     # Export trades
     if trades:

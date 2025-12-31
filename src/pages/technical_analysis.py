@@ -94,7 +94,7 @@ def render():
         xaxis_rangeslider_visible=False
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
     # Additional indicator charts
     if show_rsi:
@@ -114,7 +114,7 @@ def render():
             yaxis=dict(range=[0, 100])
         )
 
-        st.plotly_chart(fig_rsi, use_container_width=True)
+        st.plotly_chart(fig_rsi, width="stretch")
 
         # RSI interpretation
         current_rsi = rsi.iloc[-1]
@@ -145,7 +145,7 @@ def render():
             height=250
         )
 
-        st.plotly_chart(fig_macd, use_container_width=True)
+        st.plotly_chart(fig_macd, width="stretch")
 
     if show_stoch:
         st.markdown("#### Stochastic Oscillator")
@@ -168,7 +168,7 @@ def render():
             yaxis=dict(range=[0, 100])
         )
 
-        st.plotly_chart(fig_stoch, use_container_width=True)
+        st.plotly_chart(fig_stoch, width="stretch")
 
     if show_atr:
         st.markdown("#### ATR (Average True Range) - Volatility")
@@ -184,7 +184,7 @@ def render():
             height=250
         )
 
-        st.plotly_chart(fig_atr, use_container_width=True)
+        st.plotly_chart(fig_atr, width="stretch")
 
     if show_obv:
         st.markdown("#### OBV (On-Balance Volume)")
@@ -200,4 +200,4 @@ def render():
             height=250
         )
 
-        st.plotly_chart(fig_obv, use_container_width=True)
+        st.plotly_chart(fig_obv, width="stretch")

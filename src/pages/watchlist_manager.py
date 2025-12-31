@@ -163,7 +163,7 @@ def render():
 
                             if summary:
                                 df_summary = pd.DataFrame(summary)
-                                st.dataframe(df_summary, use_container_width=True, hide_index=True)
+                                st.dataframe(df_summary, width="stretch", hide_index=True)
 
                                 # Quick actions
                                 col1, col2 = st.columns(2)

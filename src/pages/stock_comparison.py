@@ -98,7 +98,7 @@ def render():
                 # Display comparison table
                 st.markdown("### 📋 Comparison Table")
                 df_comparison = pd.DataFrame(comparison_data)
-                st.dataframe(df_comparison, use_container_width=True, hide_index=True)
+                st.dataframe(df_comparison, width="stretch", hide_index=True)
 
                 # Normalized price chart
                 st.markdown("### 📈 Price Performance (Normalized to 100)")
@@ -124,7 +124,7 @@ def render():
                     hovermode='x unified',
                     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width="stretch")
 
                 # Two columns for correlation and technical scores
                 col1, col2 = st.columns(2)
@@ -157,7 +157,7 @@ def render():
                             template='plotly_white',
                             xaxis=dict(side="bottom")
                         )
-                        st.plotly_chart(fig_corr, use_container_width=True)
+                        st.plotly_chart(fig_corr, width="stretch")
 
                 with col2:
                     # Technical scores bar chart
@@ -186,7 +186,7 @@ def render():
                         template='plotly_white',
                         showlegend=False
                     )
-                    st.plotly_chart(fig_scores, use_container_width=True)
+                    st.plotly_chart(fig_scores, width="stretch")
 
                 # Export comparison
                 st.markdown("---")
