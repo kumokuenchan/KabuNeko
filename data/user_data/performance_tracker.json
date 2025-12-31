@@ -1,0 +1,15 @@
+{
+  "trades": [
+    {
+      "id": "trade_1_1767173067",
+      "ticker": "AAPL",
+      "type": "BUY",
+      "price": 100.0,
+      "shares": 100,
+      "total_value": 10000.0,
+      "date": "2025-12-31T17:24:27.092146",
+      "status": "OPEN"
+    }
+  ],
+  "statistics": {}
+}
