@@ -17,6 +17,7 @@ A professional-grade stock analysis web application built with Streamlit, featur
 - **💹 Performance Tracker** - Track paper trading performance with P&L analysis
 - **₿ Crypto Analysis** - Dedicated cryptocurrency analysis with 24/7 market data and volatility metrics
 - **📰 AI News Sentiment** - AI-powered analysis of news headlines with sentiment scoring and trend detection
+- **💼 Insider Trading Tracker** - Monitor executive and insider transactions with buy/sell signals and multi-timeframe analysis
 - **🌙 Dark Mode** - Toggle between light and dark themes
 
 ## 🚀 Quick Start
@@ -63,7 +64,8 @@ stock/
     ├── data/
     │   ├── fetcher.py              # Stock data fetching (yfinance)
     │   ├── persistence.py          # User data persistence
-    │   └── loader.py               # Standardized data loading utilities
+    │   ├── loader.py               # Standardized data loading utilities
+    │   └── insider_data.py         # Insider trading data ⭐ NEW
     │
     ├── indicators/
     │   ├── trend.py                # Trend indicators (SMA, EMA, MACD)
@@ -93,7 +95,7 @@ stock/
     ├── alerts/
     │   └── checker.py              # Price alert monitoring
     │
-    └── pages/                      # 14 page modules
+    └── pages/                      # 15 page modules
         ├── __init__.py
         ├── home.py
         ├── stock_overview.py
@@ -108,7 +110,8 @@ stock/
         ├── stock_comparison.py
         ├── watchlist_manager.py
         ├── crypto_analysis.py
-        └── news_sentiment.py          # AI news sentiment ⭐ NEW
+        ├── news_sentiment.py          # AI news sentiment
+        └── insider_trading.py         # Insider trading tracker ⭐ NEW
 ```
 
 ## 🛠️ Technology Stack

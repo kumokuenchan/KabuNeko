@@ -37,6 +37,7 @@ from src.pages import (
     render_watchlist_manager,
     render_crypto_analysis,
     render_news_sentiment,
+    render_insider_trading,
 )
 
 # Page configuration
@@ -87,7 +88,8 @@ def main() -> None:
                 "🔔 Price Alerts",
                 "💹 Performance Tracker",
                 "₿ Crypto Analysis",
-                "📰 News Sentiment"
+                "📰 News Sentiment",
+                "💼 Insider Trading"
             ],
             label_visibility="collapsed"
         )
@@ -145,6 +147,7 @@ def main() -> None:
         "💹 Performance Tracker": render_performance_tracker,
         "₿ Crypto Analysis": render_crypto_analysis,
         "📰 News Sentiment": render_news_sentiment,
+        "💼 Insider Trading": render_insider_trading,
     }
 
     # Find and render the selected page
