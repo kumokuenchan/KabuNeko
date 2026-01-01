@@ -20,6 +20,7 @@ from .watchlist_manager import render as render_watchlist_manager
 from .crypto_analysis import render as render_crypto_analysis
 from .news_sentiment import render as render_news_sentiment
 from .insider_trading import render as render_insider_trading
+from .earnings_calendar import render as render_earnings_calendar
 
 __all__ = [
     'render_home',
@@ -37,4 +38,5 @@ __all__ = [
     'render_crypto_analysis',
     'render_news_sentiment',
     'render_insider_trading',
+    'render_earnings_calendar',
 ]

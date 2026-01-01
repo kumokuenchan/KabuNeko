@@ -38,6 +38,7 @@ from src.pages import (
     render_crypto_analysis,
     render_news_sentiment,
     render_insider_trading,
+    render_earnings_calendar,
 )
 
 # Page configuration
@@ -89,7 +90,8 @@ def main() -> None:
                 "💹 Performance Tracker",
                 "₿ Crypto Analysis",
                 "📰 News Sentiment",
-                "💼 Insider Trading"
+                "💼 Insider Trading",
+                "📊 Earnings Calendar"
             ],
             label_visibility="collapsed"
         )
@@ -148,6 +150,7 @@ def main() -> None:
         "₿ Crypto Analysis": render_crypto_analysis,
         "📰 News Sentiment": render_news_sentiment,
         "💼 Insider Trading": render_insider_trading,
+        "📊 Earnings Calendar": render_earnings_calendar,
     }
 
     # Find and render the selected page
