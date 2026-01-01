@@ -40,6 +40,7 @@ from src.pages import (
     render_insider_trading,
     render_earnings_calendar,
     render_pattern_scanner,
+    render_market_screener,
 )
 
 # Page configuration
@@ -93,7 +94,8 @@ def main() -> None:
                 "📰 News Sentiment",
                 "💼 Insider Trading",
                 "📊 Earnings Calendar",
-                "🔍 Pattern Scanner"
+                "🔍 Pattern Scanner",
+                "🎯 Market Screener"
             ],
             label_visibility="collapsed"
         )
@@ -154,6 +156,7 @@ def main() -> None:
         "💼 Insider Trading": render_insider_trading,
         "📊 Earnings Calendar": render_earnings_calendar,
         "🔍 Pattern Scanner": render_pattern_scanner,
+        "🎯 Market Screener": render_market_screener,
     }
 
     # Find and render the selected page

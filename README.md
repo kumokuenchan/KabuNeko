@@ -20,6 +20,7 @@ A professional-grade stock analysis web application built with Streamlit, featur
 - **💼 Insider Trading Tracker** - Monitor executive and insider transactions with buy/sell signals and multi-timeframe analysis
 - **📊 Earnings Calendar** - Track upcoming earnings dates, analyze historical earnings performance, and monitor beat/miss rates
 - **🔍 Chart Pattern Scanner** - AI-powered detection of technical patterns (head & shoulders, double tops/bottoms, triangles) with trading signals
+- **🎯 Advanced Market Screener** - 7 preset screeners to find gap-ups/downs, unusual volume, momentum stocks, value plays, high beta, and 52-week high breakouts
 - **🌙 Dark Mode** - Toggle between light and dark themes
 
 ## 🚀 Quick Start
@@ -86,7 +87,8 @@ stock/
     ├── analysis/
     │   ├── investment_recommendation.py  # AI recommendation engine
     │   ├── sentiment_analyzer.py   # News sentiment analysis
-    │   └── pattern_detector.py     # Chart pattern detection ⭐ NEW
+    │   ├── pattern_detector.py     # Chart pattern detection
+    │   └── market_screener.py      # Advanced market screener ⭐ NEW
     │
     ├── fundamental/
     │   └── ratios.py               # Financial ratios
@@ -99,7 +101,7 @@ stock/
     ├── alerts/
     │   └── checker.py              # Price alert monitoring
     │
-    └── pages/                      # 17 page modules
+    └── pages/                      # 18 page modules
         ├── __init__.py
         ├── home.py
         ├── stock_overview.py
@@ -117,7 +119,8 @@ stock/
         ├── news_sentiment.py          # AI news sentiment
         ├── insider_trading.py         # Insider trading tracker
         ├── earnings_calendar.py       # Earnings calendar & analysis
-        └── pattern_scanner.py         # Chart pattern detection ⭐ NEW
+        ├── pattern_scanner.py         # Chart pattern detection
+        └── market_screener.py         # Advanced market screener ⭐ NEW
 ```
 
 ## 🛠️ Technology Stack
