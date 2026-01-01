@@ -22,6 +22,7 @@ A professional-grade stock analysis web application built with Streamlit, featur
 - **🔍 Chart Pattern Scanner** - AI-powered detection of technical patterns (head & shoulders, double tops/bottoms, triangles) with trading signals
 - **🎯 Advanced Market Screener** - 7 preset screeners to find gap-ups/downs, unusual volume, momentum stocks, value plays, high beta, and 52-week high breakouts
 - **🌐 Global Markets Dashboard** - Track 20 international indices (Asia, Europe, Americas including Malaysia KLCI), currencies (including MYR), commodities, and correlations with US markets in real-time
+- **📦 ETF Holdings Explorer** - Discover what stocks are inside any ETF, view top holdings with weights, analyze sector allocation, and understand fund concentration
 - **🌙 Dark Mode** - Toggle between light and dark themes
 
 ## 🚀 Quick Start
@@ -71,7 +72,8 @@ stock/
     │   ├── loader.py               # Standardized data loading utilities
     │   ├── insider_data.py         # Insider trading data
     │   ├── earnings_data.py        # Earnings calendar & analysis
-    │   └── global_markets.py       # Global markets data ⭐ NEW
+    │   ├── global_markets.py       # Global markets data
+    │   └── etf_data.py             # ETF holdings & info ⭐ NEW
     │
     ├── indicators/
     │   ├── trend.py                # Trend indicators (SMA, EMA, MACD)
@@ -103,7 +105,7 @@ stock/
     ├── alerts/
     │   └── checker.py              # Price alert monitoring
     │
-    └── pages/                      # 19 page modules
+    └── pages/                      # 20 page modules
         ├── __init__.py
         ├── home.py
         ├── stock_overview.py
@@ -123,7 +125,8 @@ stock/
         ├── earnings_calendar.py       # Earnings calendar & analysis
         ├── pattern_scanner.py         # Chart pattern detection
         ├── market_screener.py         # Advanced market screener
-        └── global_markets.py          # Global markets dashboard ⭐ NEW
+        ├── global_markets.py          # Global markets dashboard
+        └── etf_explorer.py            # ETF holdings explorer ⭐ NEW
 ```
 
 ## 🛠️ Technology Stack

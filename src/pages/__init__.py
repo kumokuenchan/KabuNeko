@@ -24,6 +24,7 @@ from .earnings_calendar import render as render_earnings_calendar
 from .pattern_scanner import render as render_pattern_scanner
 from .market_screener import render as render_market_screener
 from .global_markets import render as render_global_markets
+from .etf_explorer import render as render_etf_explorer
 
 __all__ = [
     'render_home',
@@ -45,4 +46,5 @@ __all__ = [
     'render_pattern_scanner',
     'render_market_screener',
     'render_global_markets',
+    'render_etf_explorer',
 ]

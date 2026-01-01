@@ -42,6 +42,7 @@ from src.pages import (
     render_pattern_scanner,
     render_market_screener,
     render_global_markets,
+    render_etf_explorer,
 )
 
 # Page configuration
@@ -97,7 +98,8 @@ def main() -> None:
                 "📊 Earnings Calendar",
                 "🔍 Pattern Scanner",
                 "🎯 Market Screener",
-                "🌐 Global Markets"
+                "🌐 Global Markets",
+                "📦 ETF Explorer"
             ],
             label_visibility="collapsed"
         )
@@ -160,6 +162,7 @@ def main() -> None:
         "🔍 Pattern Scanner": render_pattern_scanner,
         "🎯 Market Screener": render_market_screener,
         "🌐 Global Markets": render_global_markets,
+        "📦 ETF Explorer": render_etf_explorer,
     }
 
     # Find and render the selected page

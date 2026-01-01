@@ -2,6 +2,9 @@
 
 # Data Acquisition
 yfinance>=0.2.32
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
 
 # Data Manipulation
 pandas>=2.0.0
