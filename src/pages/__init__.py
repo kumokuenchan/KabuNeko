@@ -23,6 +23,7 @@ from .insider_trading import render as render_insider_trading
 from .earnings_calendar import render as render_earnings_calendar
 from .pattern_scanner import render as render_pattern_scanner
 from .market_screener import render as render_market_screener
+from .global_markets import render as render_global_markets
 
 __all__ = [
     'render_home',
@@ -43,4 +44,5 @@ __all__ = [
     'render_earnings_calendar',
     'render_pattern_scanner',
     'render_market_screener',
+    'render_global_markets',
 ]
