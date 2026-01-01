@@ -24,7 +24,7 @@ def create_index_heatmap(df: pd.DataFrame) -> go.Figure:
         'Americas': ['S&P 500', 'Dow Jones', 'NASDAQ', 'Russell 2000', 'TSX (Canada)', 'Bovespa (Brazil)'],
         'Europe': ['FTSE 100 (UK)', 'DAX (Germany)', 'CAC 40 (France)', 'IBEX 35 (Spain)', 'FTSE MIB (Italy)'],
         'Asia-Pacific': ['Nikkei 225 (Japan)', 'Hang Seng (Hong Kong)', 'Shanghai Composite', 'KOSPI (South Korea)',
-                        'Sensex (India)', 'Nifty 50 (India)', 'ASX 200 (Australia)'],
+                        'Sensex (India)', 'Nifty 50 (India)', 'KLCI (Malaysia)', 'ASX 200 (Australia)'],
     }
 
     fig = go.Figure()

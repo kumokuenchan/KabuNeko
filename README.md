@@ -21,7 +21,7 @@ A professional-grade stock analysis web application built with Streamlit, featur
 - **📊 Earnings Calendar** - Track upcoming earnings dates, analyze historical earnings performance, and monitor beat/miss rates
 - **🔍 Chart Pattern Scanner** - AI-powered detection of technical patterns (head & shoulders, double tops/bottoms, triangles) with trading signals
 - **🎯 Advanced Market Screener** - 7 preset screeners to find gap-ups/downs, unusual volume, momentum stocks, value plays, high beta, and 52-week high breakouts
-- **🌐 Global Markets Dashboard** - Track international indices (Asia, Europe, Americas), currencies, commodities, and correlations with US markets in real-time
+- **🌐 Global Markets Dashboard** - Track 20 international indices (Asia, Europe, Americas including Malaysia KLCI), currencies (including MYR), commodities, and correlations with US markets in real-time
 - **🌙 Dark Mode** - Toggle between light and dark themes
 
 ## 🚀 Quick Start

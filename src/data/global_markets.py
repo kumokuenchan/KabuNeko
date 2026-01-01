@@ -36,6 +36,7 @@ class GlobalMarketsFetcher:
         'KOSPI (South Korea)': '^KS11',
         'Sensex (India)': '^BSESN',
         'Nifty 50 (India)': '^NSEI',
+        'KLCI (Malaysia)': '^KLSE',
 
         # Other Regions
         'ASX 200 (Australia)': '^AXJO',
@@ -49,6 +50,7 @@ class GlobalMarketsFetcher:
         'GBP/USD': 'GBPUSD=X',
         'USD/JPY': 'JPY=X',
         'USD/CNY': 'CNY=X',
+        'USD/MYR': 'MYR=X',
         'AUD/USD': 'AUDUSD=X',
         'USD/CAD': 'CAD=X',
         'USD/CHF': 'CHF=X',
@@ -82,6 +84,7 @@ class GlobalMarketsFetcher:
         'Japan (TSE)': {'open': '09:00', 'close': '15:00', 'timezone': 'Asia/Tokyo'},
         'Hong Kong (HKEX)': {'open': '09:30', 'close': '16:00', 'timezone': 'Asia/Hong_Kong'},
         'Shanghai (SSE)': {'open': '09:30', 'close': '15:00', 'timezone': 'Asia/Shanghai'},
+        'Malaysia (Bursa)': {'open': '09:00', 'close': '17:00', 'timezone': 'Asia/Kuala_Lumpur'},
         'India (NSE)': {'open': '09:15', 'close': '15:30', 'timezone': 'Asia/Kolkata'},
         'Australia (ASX)': {'open': '10:00', 'close': '16:00', 'timezone': 'Australia/Sydney'},
     }
